@@ -1,0 +1,282 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:id="@+id/newform_cont"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    tools:context=".FormHandler" >
+    
+    <LinearLayout
+        android:id="@+id/infobar"
+        style="@android:style/Widget.Holo.ActionBar.Solid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+	    
+	    <Button
+	        android:id="@+id/projectinfo"
+	        style="@android:style/Widget.Holo.ActionBar.Solid"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".25"
+	        android:tag="1"
+	        android:text="@string/projectinfo"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+	        android:id="@+id/workinfo"
+	        android:tag="2"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".25"
+	        android:text="@string/workinfo"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        style="@android:style/Widget.Holo.ActionBar.Solid" />
+
+        <Button
+            android:id="@+id/windowinfo"
+            android:tag="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="@string/workwindow"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            style="@android:style/Widget.Holo.ActionBar.Solid" />
+
+        <Button
+	        android:id="@+id/train"
+	        android:tag="4"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".25"
+	        android:text="@string/train"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        style="@android:style/Widget.Holo.ActionBar.Solid" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scrollbar"
+        style="@android:style/Widget.Holo.ActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/fsigscroll"
+                style="@android:style/Widget.Holo.Light.HorizontalScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:measureAllChildren="false"
+                android:scrollbars="vertical|horizontal" >
+
+                <ImageView
+                    android:id="@+id/fsignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/signhere"
+                    android:scaleType="fitStart" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <ScrollView
+                style="@android:style/Widget.DeviceDefault.ExpandableListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="fill_vertical"
+                android:clickable="false"
+                android:fadingEdge="horizontal|vertical"
+                android:fillViewport="true"
+                android:fitsSystemWindows="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isScrollContainer="true"
+                android:keepScreenOn="false"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical|horizontal" >
+
+                <ImageView
+                    android:id="@+id/csignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/signhere"
+                    android:scaleType="fitStart" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sigbarView"
+        style="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sigbar"
+        android:layout_alignBaseline="@+id/sigbar"
+        android:layout_gravity="bottom"
+        android:maxHeight="50dp"
+        android:orientation="horizontal" >
+
+		 <TextView
+	        android:id="@+id/fsigView"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".20"
+	        android:gravity="bottom"
+	        android:text="@string/fsig"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		 <TextView
+    	    android:id="@+id/fdateView"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight=".30"
+    	    android:gravity="bottom"
+    	    android:text=""
+    	    android:textAppearance="?android:attr/textAppearanceLarge" />
+		 <TextView
+	        android:id="@+id/csigView"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".21"
+	        android:gravity="bottom"
+	        android:text="@string/csig"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <TextView
+    	    android:id="@+id/cdateView"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight=".29"
+    	    android:gravity="bottom"
+    	    android:text=""
+    	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	   	</LinearLayout>
+		
+    
+	    <LinearLayout
+	        android:id="@+id/sigbar"
+	        style="@android:style/Widget.Holo.ActionBar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/newrep"
+	        android:layout_alignBaseline="@+id/newrep"
+	        android:layout_gravity="bottom"
+	        android:maxHeight="60dp"
+	        android:orientation="horizontal" >
+
+	    <ImageButton
+	        android:id="@+id/fsigcap"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".15"
+	        android:alpha=".75"
+	        android:background="@android:drawable/bottom_bar"
+	        android:scaleType="fitStart"
+	        android:contentDescription="@string/signhere"
+	        android:src="@android:drawable/ic_menu_send" />
+
+	    <ImageButton
+	        android:id="@+id/csigcap"
+	        style="@android:style/Widget.Holo.Button.Inset"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".15"
+	        android:alpha=".75"
+	        android:background="@android:drawable/bottom_bar"
+	        android:contentDescription="@string/signhere"
+	        android:scaleType="fitStart"
+	        android:src="@android:drawable/ic_menu_send" />
+
+	    	
+	    </LinearLayout>
+	    
+	    <ImageButton
+	        android:id="@+id/newrep"
+	        android:src="@android:drawable/ic_input_add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/submitdata"
+	        android:layout_alignParentBottom="true"
+	        android:contentDescription="@string/newrep"
+	        android:alpha=".75"
+	        android:text="@string/newrep"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <ImageButton
+	        android:id="@+id/restore"
+	        android:src="@android:drawable/ic_media_play"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/newrep"
+	        android:layout_alignTop="@+id/submitdata"
+	        android:layout_alignParentBottom="true"
+	        android:alpha=".75"
+	        android:contentDescription="@string/restore"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <Switch
+	        android:id="@+id/email"
+	        style="@android:style/Holo.SegmentedButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignTop="@+id/submitdata"
+	        android:layout_centerHorizontal="true"
+	        android:alpha=".75"
+	        android:text="@string/emailself"
+	        android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button" />
+
+	    <EditText
+	        android:id="@+id/dateView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="date"
+	        android:minEms="6"
+	        android:alpha=".75"
+	        android:tag="@string/date"
+	        android:layout_alignTop="@+id/submitdata"
+	        android:layout_toLeftOf="@+id/submitdata"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="center_vertical"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <Button
+	        android:id="@+id/submitdata"
+	        style="@android:style/Widget.Holo.ActionButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:alpha=".75"
+	        android:text="@string/submit"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <EditText
+	        android:id="@+id/blank"
+	        android:enabled="false"
+	        android:text="@string/blanktext"
+	        android:tag="@string/blank"
+	        android:focusable="false"
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:visibility="gone"/>
+</RelativeLayout>

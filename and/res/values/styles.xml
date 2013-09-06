@@ -1,0 +1,11 @@
+<resources>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.NoActionBar">
+
+    </style>
+    
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+    <style name="RR">asd</style>
+
+</resources>

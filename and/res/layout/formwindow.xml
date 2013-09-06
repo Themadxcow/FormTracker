@@ -1,0 +1,114 @@
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/formwindow"
+        android:layout_below="@+id/infobar"
+        android:layout_above="@+id/sigViewbar"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" >
+    	<TableRow 
+    	    android:id="@+id/windowstatic"
+    	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+	        <TextView
+	            android:id="@+id/authView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+	            android:gravity="center_horizontal"
+	            android:text="@string/auth"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/dispatchView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+	            android:gravity="center_horizontal"
+	            android:text="@string/dispatch"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/clearView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+		        android:layout_gravity="bottom"
+	            android:gravity="center_horizontal"
+	            android:text="@string/clear"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/worktimeView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".28"
+		        android:layout_gravity="bottom"
+	            android:gravity="center_horizontal"
+	            android:text="@string/worktime"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/wCommentView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".15"
+		        android:layout_gravity="bottom"
+	            android:gravity="center_horizontal"
+	            android:text="@string/comment"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </TableRow>
+	    
+    	<TableRow 
+    	    android:id="@+id/windowdynamic"
+    	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+
+		    <EditText
+		        android:id="@+id/auth"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+		        android:hint="@string/auth"
+		        android:inputType="number"
+		        android:tag="auth" />
+
+		    <EditText
+		        android:id="@+id/dispatch"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+		        android:hint="@string/dispatch"
+		        android:inputType="textCapCharacters|textAutoComplete"
+		        android:tag="dispatch" />
+
+		    <EditText
+		        android:id="@+id/clear"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+		        android:tag="clear"
+		        android:inputType="number"
+		        android:hint="@string/clear"/>
+		    <EditText
+		        android:id="@+id/worktime"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+		        android:tag="worktime"
+		        android:inputType="number"
+		        android:hint="@string/worktime" />
+		    <EditText
+		        android:id="@+id/worktimeend"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".14"
+		        android:tag="worktimeend"
+		        android:inputType="number"
+		        android:hint="@string/worktime"/>
+
+		    <EditText
+		        android:id="@+id/wComment"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".15"
+		        android:hint="@string/comment"
+		        android:inputType="textCapSentences|textAutoComplete"
+		        android:tag="wcomment" />
+
+		    </TableRow>
+    </TableLayout>

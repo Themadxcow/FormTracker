@@ -1,0 +1,104 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/formtrain"
+        android:layout_below="@+id/infobar"
+        android:layout_above="@+id/sigViewbar"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" >
+    	<TableRow 
+    	    android:id="@+id/trainstatic"
+    	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+	        <TextView
+	            android:id="@+id/engineView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".2"
+	            android:gravity="center_horizontal"
+	            android:text="@string/engine"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/expectView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".15"
+	            android:gravity="center_horizontal"
+	            android:text="@string/expected"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/passedView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".15"
+	            android:gravity="center_horizontal"
+	            android:text="@string/passed"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/directionView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".25"
+	            android:gravity="center_horizontal"
+	            android:text="@string/direction"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/commentView"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".25"
+	            android:gravity="center_horizontal"
+	            android:text="@string/comment"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </TableRow>
+	    
+    	<TableRow 
+    	    android:id="@+id/traindynamic"
+    	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+
+		    <EditText
+		        android:id="@+id/engine"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".2"
+		        android:hint="@string/enginehint"
+		        android:inputType="textAutoComplete|number"
+		        android:tag="engine" />
+
+		    <EditText
+		        android:id="@+id/expect"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".15"
+		        android:hint="@string/passedhint"
+		        android:inputType="textCapSentences|textAutoComplete"
+		        android:tag="expect" />
+
+		    <EditText
+		        android:id="@+id/passed"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".15"
+		        android:hint="@string/passedhint"
+		        android:inputType="textCapSentences|textAutoComplete"
+		        android:tag="passed" />
+
+		    <EditText
+		        android:id="@+id/direction"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".25"
+		        android:hint="@string/direction"
+		        android:inputType="textCapSentences|textAutoComplete"
+		        android:tag="direction" />
+
+		    <EditText
+		        android:id="@+id/comment"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".25"
+		        android:hint="@string/comment"
+		        android:inputType="textCapSentences|textAutoComplete"
+		        android:tag="tcomment" />
+
+		    </TableRow>
+    </TableLayout>

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_cont"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:text="@string/title" />
+        
+    <Button android:id="@+id/prev_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prev_form" />
+    
+    <Button android:id="@+id/newform"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newrep" />
+        
+<!--        <Button
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="10dp"
+            android:text="@string/feedback" />  -->
+ 
+</LinearLayout>

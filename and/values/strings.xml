@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Daily Work Report</string>
+    <string name="title">RailPros Daily Report Log Utility</string>
+    <string name="dialog">Select Record</string>
+    <string name="blank">blank</string>
+    <string name="blanktext">*N/A*</string>
+    <string name="date">Date:</string>
+    <string name="project_name">Project Name:</string>
+    <string name="project_loc">Project Location:</string>
+    <string name="job_num">Job #:</string>
+        
+    <string name="flagman">Flagman:</string>
+    <string name="fend">Flagman End Time:</string>
+    <string name="fleave">Flagman Leave Time:</string>
+    <string name="fstart">Flagman Start Time:</string>
+    <string name="fonsite">Flagman On Site Time:</string>
+    
+    <string name="cname">Contractor Name:</string>
+    <string name="cstart">Contractor Start Time:</string>
+    <string name="cend">Contractor End Time:</string>
+    <string name="total">Total Hours</string>
+    <string name="fsig">Flagman Signature</string>
+    <string name="csig">Contractor Signature</string>
+    <string name ="signhere">Sign Here</string>
+
+    
+    <string name="newrep">New Report</string>
+    <string name="submit">Submit</string>
+    <string name="projectinfo">Project Information</string>
+    <string name="workinfo">Work Zone Information</string>
+    <string name="workwindow">Work Window Information</string>
+    <string name="train">Train Activity</string>
+        
+    <string name="restore">Restore Data</string>
+    <string name="prev_form">Previous Reports</string>
+    <string name="emailself">Email copy to self</string>
+    
+  	<string name="select">Open Report</string>
+  	<string name="no_data">List is Empty</string>
+
+    
+  	<string name="namehint">First Last</string>
+  	<string name="projhint">Project Description</string>
+  	<string name="lochint">Primary Location</string>
+  	<string name="timehint">00:00</string>
+  	<string name="milehint">0000</string>
+  	<string name="milehintend">9999</string>
+  	
+  	<string name="engine">Engine Number</string>
+  	<string name="expected">Expected</string>
+  	<string name="passed">Passed</string>
+  	<string name="direction">Direction</string>
+  	<string name="comment">Comments</string>
+  	<string name="passedhint">Yes/No</string>
+  	<string name="enginehint">Engine Identifier</string>
+  	
+  	<string name="auth">Authority Number</string>
+  	<string name="authority">Authority</string>
+  	<string name="number">Number</string>
+  	<string name="dispatch">Dispatcher Initials</string>
+  	<string name="dispatcher">Dispatcher</string>
+  	<string name="initials">Initials</string>
+  	<string name="worktime">Work Time</string>
+  	<string name="clear">Time Clear</string>
+  	
+  	<string name="subdiv">Subdivision</string>
+  	<string name="road">Roadmaster</string>
+  	<string name="milepost">Milepost Work Limits</string>
+  	<string name="prot">Protection</string>
+  	<string name="other">Other</string>
+  	
+  	<string name="password">Enter Password</string>
+  	
+  	
+    
+
+</resources>

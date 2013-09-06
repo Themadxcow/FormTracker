@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/formwork"
+    android:layout_below="@+id/infobar"
+    android:layout_above="@+id/sigViewbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/workrow1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/subdivisionView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:text="@string/subdiv"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/subdivision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:tag="subdivision"
+            android:hint="@string/namehint"
+            android:inputType="textPersonName|textAutoComplete" />
+
+        <TextView
+            android:id="@+id/roadView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:text="@string/road"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/road"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:tag="road"
+            android:hint="@string/road"
+            android:inputType="textAutoComplete" />
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/workrow2"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/workrow1"
+    	android:orientation="horizontal">
+        <TextView
+            android:id="@+id/milepostView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:text="@string/milepost"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/milepost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:tag="milepost"
+            android:hint="@string/milehint"
+            android:inputType="textAutoComplete" />
+        <EditText
+            android:id="@+id/milepostend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:tag="milepostend"
+            android:hint="@string/milehintend"
+            android:inputType="textAutoComplete" />
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/workrow3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/workrow2"
+    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/protView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="bottom"
+	        android:text="@string/prot"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <EditText
+	        android:id="@+id/prot"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/prot"
+	        android:tag="prot"
+	        android:inputType="time|textAutoComplete" />
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/workrow4"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/workrow3"
+    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/otherView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="bottom"
+	        android:text="@string/other"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <EditText
+	        android:id="@+id/other"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/other"
+	        android:tag="other"
+	        android:inputType="textAutoComplete" />
+	</LinearLayout>
+
+</RelativeLayout>
